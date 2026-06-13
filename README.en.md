@@ -10,7 +10,7 @@
 [![Rust](https://img.shields.io/badge/Rust-egui%2Fwgpu-orange.svg)](https://github.com/emilk/egui)
 [![Platform](https://img.shields.io/badge/platform-macOS-black.svg)](#)
 
-<img src="docs/screenshots/launchpad.png" width="720" alt="mirage Launchpad" />
+<img src="docs/screenshots/launchpad.jpg" width="720" alt="mirage Launchpad" />
 
 </div>
 
@@ -38,11 +38,11 @@ the music player actually plays sound.
 
 | Menu bar + desktop | Edge-snap tiling |
 |:---:|:---:|
-| <img src="docs/screenshots/menubar.png" width="420" /> | <img src="docs/screenshots/tiling.png" width="420" /> |
+| <img src="docs/screenshots/menubar.jpg" width="420" /> | <img src="docs/screenshots/tiling.jpg" width="420" /> |
 | Live clock, Apple menu, full dropdown menus — shortcuts actually work | Snap to edges for half-screen / quarter-screen / maximize |
 
 <div align="center">
-<img src="docs/screenshots/genie.png" width="640" alt="Genie minimize animation" />
+<img src="docs/screenshots/genie.jpg" width="640" alt="Genie minimize animation" />
 
 **Genie effect** — on minimize, the window warps into a sliced curved surface and folds into its Dock icon
 </div>
@@ -51,12 +51,12 @@ the music player actually plays sound.
 
 | Music | System Settings |
 |:---:|:---:|
-| <img src="docs/screenshots/music.png" width="420" /> | <img src="docs/screenshots/settings.png" width="420" /> |
+| <img src="docs/screenshots/music.jpg" width="420" /> | <img src="docs/screenshots/settings.jpg" width="420" /> |
 | **Actually plays**: rodio decodes mp3/m4a/flac, LCD display + scrubber + volume | Wallpaper themes, Dock size & magnification, clock seconds — all live |
 
 | Terminal | Mail |
 |:---:|:---:|
-| <img src="docs/screenshots/terminal.png" width="420" /> | <img src="docs/screenshots/mail.png" width="420" /> |
+| <img src="docs/screenshots/terminal.jpg" width="420" /> | <img src="docs/screenshots/mail.jpg" width="420" /> |
 | **Real PTY**: runs your login shell — vim / htop / colors all supported | IMAP receive + SMTP send, three-pane macOS Mail layout |
 
 ---
