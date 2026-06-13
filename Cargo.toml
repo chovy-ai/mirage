@@ -2,6 +2,9 @@
 name = "mirage"
 version = "0.1.0"
 edition = "2021"
+license = "Apache-2.0"
+description = "用 Rust + egui 复刻的 macOS 桌面 — 自绘窗口管理、Dock、Launchpad，应用是壳但功能是真的"
+repository = "https://github.com/chovy-ai/mirage"
 
 [dependencies]
 eframe = { version = "0.34", default-features = false, features = [
@@ -26,6 +29,32 @@ imap = "2.4"
 native-tls = "0.2"
 lettre = "0.11"
 mailparse = "0.16"
+
+# webview 被遮挡退占位时，用 WKWebView 快照当静态画面（见 ui/webshot.rs）。
+# 版本必须与 wry 0.55 内部锁定一致，否则 Retained<WryWebView> 类型不匹配。
+[target.'cfg(target_os = "macos")'.dependencies]
+objc2 = "0.6"
+block2 = "0.6"
+objc2-foundation = { version = "0.3", default-features = false, features = [
+    "std",
+    "NSError",
+    "NSGeometry",
+    "NSString",
+    "NSValue",
+] }
+objc2-app-kit = { version = "0.3", default-features = false, features = [
+    "std",
+    "NSImage",
+    "NSBitmapImageRep",
+    "NSGraphicsContext",
+    "NSGraphics",
+] }
+objc2-web-kit = { version = "0.3", default-features = false, features = [
+    "std",
+    "WKWebView",
+    "WKSnapshotConfiguration",
+    "block2",
+] }
 
 [profile.dev]
 opt-level = 1
