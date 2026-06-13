@@ -1,0 +1,7 @@
+/target
+.DS_Store
+
+# .app bundle 是构建产物，由 tools/bundle.sh 从 target/ + tools/AppIcon.icns 重建。
+# 保留 Info.plist 与 Resources/AppIcon.icns（小且可读），忽略编译二进制与签名。
+dist/*/Contents/MacOS/
+dist/*/Contents/_CodeSignature/
